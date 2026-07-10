@@ -1,0 +1,316 @@
+/* ======================================
+   ANTCASTLE ANIMATIONS
+====================================== */
+
+/* Fade In */
+
+@keyframes fadeIn {
+
+    from {
+        opacity:0;
+    }
+
+    to {
+        opacity:1;
+    }
+
+}
+
+/* Slide Up */
+
+@keyframes slideUp {
+
+    from{
+
+        opacity:0;
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Slide Left */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Slide Right */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Zoom */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Hero */
+
+.hero-content{
+
+    animation:slideUp 1.2s ease forwards;
+
+}
+
+/* Logo */
+
+.logo img{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+/* Navigation */
+
+header{
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+}
+
+/* Product Cards */
+
+.card{
+
+    opacity:0;
+
+    animation:slideUp .8s ease forwards;
+
+}
+
+.card:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay:.8s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+}
+
+/* Feature Cards */
+
+.feature{
+
+    opacity:0;
+
+    animation:zoomIn .9s ease forwards;
+
+}
+
+.feature:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.feature:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.feature:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.feature:nth-child(4){
+
+    animation-delay:.8s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* WhatsApp */
+
+.whatsapp{
+
+    animation:floating 2s ease-in-out infinite;
+
+}
+
+/* Hero Text */
+
+.hero h1{
+
+    animation:slideLeft 1.2s ease;
+
+}
+
+.hero p{
+
+    animation:slideRight 1.3s ease;
+
+}
+
+/* Smooth Image Zoom */
+
+.card img{
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Underline Animation */
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d4af37;
+
+    transition:.35s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* CTA Glow */
+
+.cta .btn{
+
+    animation:floating 2.5s ease-in-out infinite;
+
+}
